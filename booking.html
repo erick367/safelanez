@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Safe Lane Driving School</title>    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-sky-700 flex items-center gap-2">
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+                <span class="text-black">Safe Lane</span> <span class="text-red-600">Driving School</span>
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+            </a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="courses.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="prices.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Prices</a>
+                <a href="booking.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium active">Booking</a>
+                <a href="testimonials.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                <a href="contact.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="tel:07555656560" class="ml-4 font-semibold text-sky-700 hover:text-orange-500 flex items-center gap-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>07555 656560</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="tel:07555656560" class="bg-orange-500 text-white font-semibold py-1.5 px-4 rounded-lg shadow hover:bg-orange-600 text-sm mr-4 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call</a>
+                <button id="menu-toggle" class="text-slate-800 focus:outline-none" type="button" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 absolute top-full left-0 w-full shadow-lg border-t border-slate-200">
+            <a href="index.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">About</a>
+            <a href="courses.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Courses</a>
+            <a href="prices.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Prices</a>
+            <a href="booking.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Booking</a>
+            <a href="testimonials.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Testimonials</a>
+            <a href="contact.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="booking" class="py-20 md:py-28 bg-slate-50 section-animate text-slate-700">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-slate-800">Book Your Driving Lessons</h2>
+                <p class="text-center text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Ready to get started. Fill out the form below to request your lessons. We'll be in touch shortly to confirm details and arrange your first session.</p>
+
+                <form id="booking-form" class="max-w-3xl mx-auto bg-white p-8 md:p-10 rounded-lg shadow-xl border border-slate-200 space-y-6" action="https://formsubmit.co/safelanedrivingschoolltd@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <h3 class="text-xl font-semibold text-slate-700 border-b border-slate-300 pb-3 mb-6">Your Details</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="booking_name">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="booking_name" name="booking_name" required>
+                        </div>
+                        <div>
+                            <label for="booking_email">Email Address <span class="text-red-500">*</span></label>
+                            <input type="email" id="booking_email" name="booking_email" required>
+                        </div>
+                        <div>
+                            <label for="booking_phone">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="tel" id="booking_phone" name="booking_phone" required>
+                        </div>
+                        <div>
+                            <label for="booking_postcode">Postcode (for pickup area) <span class="text-red-500">*</span></label>
+                            <input type="text" id="booking_postcode" name="booking_postcode" required placeholder="e.g., S1">
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-slate-700 border-b border-slate-300 pb-3 mb-6 pt-4">License & Lesson Details</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label>Do you hold a UK Provisional Licence? <span class="text-red-500">*</span></label>
+                            <div class="flex items-center space-x-4 mt-2">
+                                <label class="form-choice-label">
+                                    <input type="radio" name="provisional_licence" value="Yes" class="form-radio" required>
+                                    <span>Yes</span>
+                                </label>
+                                <label class="form-choice-label">
+                                    <input type="radio" name="provisional_licence" value="No" class="form-radio">
+                                    <span>No</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Lesson Preference <span class="text-red-500">*</span></label>
+                            <div class="flex items-center space-x-4 mt-2">
+                                <label class="form-choice-label">
+                                    <input type="radio" name="booking_lesson_preference" value="Manual" class="form-radio" required>
+                                    <span>Manual</span>
+                                </label>
+                                <label class="form-choice-label">
+                                    <input type="radio" name="booking_lesson_preference" value="Automatic" class="form-radio">
+                                    <span>Automatic</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="course_selection">Course Interested In <span class="text-red-500">*</span></label>
+                        <select id="course_selection" name="course_selection" required>
+                            <option value="" disabled selected>-- Select a Course --</option>
+                            <option value="Beginner Lessons">Beginner Lessons</option>
+                            <option value="Intensive Course">Intensive Course</option>
+                            <option value="Refresher Lessons">Refresher Lessons</option>
+                            <option value="Pass Plus">Pass Plus</option>
+                            <option value="Mock Driving Test">Mock Driving Test</option>
+                            <option value="Other/Unsure">Other / Unsure</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="previous_experience">Previous Driving Experience (if any)</label>
+                        <textarea id="previous_experience" name="previous_experience" rows="3" placeholder="e.g., Number of lessons taken, specific areas practiced..."></textarea>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-slate-700 border-b border-slate-300 pb-3 mb-6 pt-4">Availability</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="preferred_start_date">Preferred Start Date</label>
+                            <input type="date" id="preferred_start_date" name="preferred_start_date" min="">
+                        </div>
+                        <div>
+                            <label>General Availability (Select all that apply)</label>
+                            <div class="space-y-2 mt-2">
+                                <label class="form-choice-label">
+                                    <input type="checkbox" name="availability[]" value="Weekday Mornings" class="form-checkbox">
+                                    <span>Weekday Mornings</span>
+                                </label>
+                                <label class="form-choice-label">
+                                    <input type="checkbox" name="availability[]" value="Weekday Afternoons" class="form-checkbox">
+                                    <span>Weekday Afternoons</span>
+                                </label>
+                                <label class="form-choice-label">
+                                    <input type="checkbox" name="availability[]" value="Weekday Evenings" class="form-checkbox">
+                                    <span>Weekday Evenings</span>
+                                </label>
+                                <label class="form-choice-label">
+                                    <input type="checkbox" name="availability[]" value="Weekends" class="form-checkbox">
+                                    <span>Weekends</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="availability_notes">Specific Availability Notes</label>
+                        <textarea id="availability_notes" name="availability_notes" rows="3" placeholder="e.g., Available Mondays after 5pm, Not available Wednesdays..."></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full sm:w-auto bg-orange-500 text-white font-semibold py-3 px-10 rounded-lg shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 transition-all transform hover:scale-105">Submit Booking Request</button>
+                    </div>
+                    <div id="booking-form-status" class="mt-4 text-center font-medium" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-slate-400 py-10 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 space-x-4">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <span class="text-slate-600">|</span>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+                <span class="text-slate-600">|</span>
+                <a href="courses.html" class="hover:text-sky-400">Courses</a>
+                <span class="text-slate-600">|</span>
+                <a href="prices.html" class="hover:text-sky-400">Prices</a>
+                <span class="text-slate-600">|</span>
+                <a href="booking.html" class="hover:text-sky-400">Booking</a>
+                <span class="text-slate-600">|</span>
+                <a href="testimonials.html" class="hover:text-sky-400">Testimonials</a>
+                <span class="text-slate-600">|</span>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </div>
+            <p class="text-slate-300">&copy; <span id="current-year"></span> Safe Lane Driving School. All rights reserved.</p>
+            <p class="text-sm mt-2 text-slate-500">Driving Success in Sheffield.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

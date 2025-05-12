@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices - Safe Lane Driving School</title>    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-sky-700 flex items-center gap-2">
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+                <span class="text-black">Safe Lane</span> <span class="text-red-600">Driving School</span>
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+            </a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="courses.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="prices.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium active">Prices</a>
+                <a href="booking.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Booking</a>
+                <a href="testimonials.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                <a href="contact.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="tel:07555656560" class="ml-4 font-semibold text-sky-700 hover:text-orange-500 flex items-center gap-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>07555 656560</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="tel:07555656560" class="bg-orange-500 text-white font-semibold py-1.5 px-4 rounded-lg shadow hover:bg-orange-600 text-sm mr-4 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call</a>
+                <button id="menu-toggle" class="text-slate-800 focus:outline-none" type="button" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 absolute top-full left-0 w-full shadow-lg border-t border-slate-200">
+            <a href="index.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">About</a>
+            <a href="courses.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Courses</a>
+            <a href="prices.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Prices</a>
+            <a href="booking.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Booking</a>
+            <a href="testimonials.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Testimonials</a>
+            <a href="contact.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="prices" class="py-20 md:py-28 bg-white section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-800">Lesson Prices & Packages</h2>
+                <p class="text-center text-slate-600 text-lg mb-10 max-w-3xl mx-auto">We offer competitive pricing for both manual and automatic lessons. Contact us for specific automatic lesson rates if they differ.</p>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    <div class="border border-slate-700 bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-4 text-sky-400">Standard Lesson Rate</h3>
+                        <p class="text-4xl font-bold text-white mb-4">£35 <span class="text-lg font-normal text-slate-400">/ hour</span></p>
+                        <p class="text-slate-400 mb-6 flex-grow">Pay as you go for maximum flexibility. Ideal for regular weekly lessons.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-400 mb-8">
+                            
+                            <li>Minimum 2hr lessons</li>
+                            <li>Flexible scheduling</li>
+                        
+                        </ul>
+                        <a href="booking.html" class="w-full text-center bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition-all duration-300 block mt-auto transform hover:scale-105">Book Now</a>
+                    </div>
+                    <div class="border-2 border-orange-500 ring-2 ring-orange-400/30 p-8 rounded-lg shadow-xl relative flex flex-col bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full shadow">Most Popular</span>
+                        <h3 class="text-2xl font-semibold mb-4 text-orange-400 mt-4">Block Booking Discount</h3>
+                        <p class="text-4xl font-bold text-white mb-4">£340 <span class="text-lg font-normal text-slate-400">/ 10 hours</span></p>
+                        <p class="text-slate-400 mb-6 flex-grow">Save money by booking lessons in advance. Get 10 hours for a discounted rate (£34/hour).</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-400 mb-8">
+                            <li>Save £10 compared to standard rate</li>
+                            <li>Secure your lesson slots</li>
+                            <li>Plan your learning journey</li>
+                            
+                        </ul>
+                        <a href="booking.html" class="w-full text-center bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-orange-600 transition-all duration-300 block mt-auto transform hover:scale-105">Book 10 Hours</a>
+                    </div>
+                    <div class="border border-slate-700 bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-4 text-sky-400">Intensive Courses</h3>
+                        <p class="text-slate-400 mb-6 flex-grow">Fast-track your learning with our intensive courses. Pricing varies based on duration and individual needs (Manual & Automatic).</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-400 mb-8">
+                            <li>Tailored packages available</li>
+                            <li>Ideal for tight deadlines</li>
+                            <li>Assessment lesson recommended</li>
+                        </ul>
+                        <a href="contact.html" class="w-full text-center bg-slate-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-slate-700 transition-all duration-300 inline-block flex-shrink-0 transform hover:scale-105 mt-auto">Request Quote</a>
+                    </div>
+                    <div class="border border-slate-700 bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <h3 class="text-2xl font-semibold mb-4 text-sky-400">Pass Plus Course</h3>
+                        <p class="text-4xl font-bold text-white mb-4">£240 <span class="text-lg font-normal text-slate-400">/ 6 hours</span></p>
+                        <p class="text-slate-400 mb-6 flex-grow">Build confidence after passing your test. Covers motorways, night driving, and more.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-400 mb-8">
+                            <li>Develop advanced skills</li>
+                            <li>Potential insurance discounts</li>
+                            <li>No further test required</li>
+                            <li>Confirm current offers when booking</li>
+                        </ul>
+                        <a href="contact.html" class="w-full text-center bg-slate-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-slate-700 transition-all duration-300 inline-block flex-shrink-0 transform hover:scale-105 mt-auto">Enquire About Pass Plus</a>
+                    </div>
+                </div>
+                <p class="text-center text-slate-500 mt-12 text-sm">Note: Prices shown are indicative and subject to change. Please confirm current rates and specific course pricing when booking. Test fees (Theory & Practical) are paid directly to the DVSA and are not included.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-slate-400 py-10 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 space-x-4">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <span class="text-slate-600">|</span>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+                <span class="text-slate-600">|</span>
+                <a href="courses.html" class="hover:text-sky-400">Courses</a>
+                <span class="text-slate-600">|</span>
+                <a href="prices.html" class="hover:text-sky-400">Prices</a>
+                <span class="text-slate-600">|</span>
+                <a href="booking.html" class="hover:text-sky-400">Booking</a>
+                <span class="text-slate-600">|</span>
+                <a href="testimonials.html" class="hover:text-sky-400">Testimonials</a>
+                <span class="text-slate-600">|</span>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </div>
+            <p class="text-slate-300">&copy; <span id="current-year"></span> Safe Lane Driving School. All rights reserved.</p>
+            <p class="text-sm mt-2 text-slate-500">Driving Success in Sheffield.</p>
+        </div>
+    </footer>
+
+    <a href="booking.html" class="fixed bottom-6 right-6 z-50 bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-all text-lg md:text-base flex items-center gap-2 custom-shadow">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        Book Now
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

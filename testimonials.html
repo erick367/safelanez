@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Safe Lane Driving School</title>    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-sky-700 flex items-center gap-2">
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+                <span class="text-black">Safe Lane</span> <span class="text-red-600">Driving School</span>
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+            </a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="courses.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="prices.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Prices</a>
+                <a href="booking.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Booking</a>
+                <a href="testimonials.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium active">Testimonials</a>
+                <a href="contact.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="tel:07555656560" class="ml-4 font-semibold text-sky-700 hover:text-orange-500 flex items-center gap-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>07555 656560</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="tel:07555656560" class="bg-orange-500 text-white font-semibold py-1.5 px-4 rounded-lg shadow hover:bg-orange-600 text-sm mr-4 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call</a>
+                <button id="menu-toggle" class="text-slate-800 focus:outline-none" type="button" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 absolute top-full left-0 w-full shadow-lg border-t border-slate-200">
+            <a href="index.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">About</a>
+            <a href="courses.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Courses</a>
+            <a href="prices.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Prices</a>
+            <a href="booking.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Booking</a>
+            <a href="testimonials.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Testimonials</a>
+            <a href="contact.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="testimonials" class="py-20 md:py-28 bg-slate-50 section-animate">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-800">What Our Learners Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Passed my test first time thanks to Safe Lane! My instructor was incredibly patient and made learning fun. Highly recommend them to anyone in Sheffield."</p>
+                        <p class="font-semibold text-sky-400 text-right">- Sarah K.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Excellent driving school. Very professional, reliable, and friendly. I felt confident and well-prepared for my test. Thank you!"</p>
+                        <p class="font-semibold text-sky-400 text-right">- Tom P.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Switched to Automatic lessons with Safe Lane and passed quickly! My instructor was fantastic and really patient. So glad I chose them."</p>
+                        <p class="font-semibold text-sky-400 text-right">- Chloe D.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Really helpful instructor, explained everything clearly and made me feel comfortable behind the wheel. Passed my test with confidence."</p>
+                        <p class="font-semibold text-sky-400 text-right">- James P.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Took refresher lessons after not driving for years. My instructor was brilliant at building my confidence back up, especially on roundabouts!"</p>
+                        <p class="font-semibold text-sky-400 text-right">- David R.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Flexible lesson times around my work schedule were a lifesaver. Passed first time!"</p>
+                        <p class="font-semibold text-sky-400 text-right">- Emily B.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Did an intensive course before my test and it really helped solidify everything. Instructor was great."</p>
+                        <p class="font-semibold text-sky-400 text-right">- Michael S.</p>
+                    </div>
+                    <div class="bg-slate-900 text-slate-300 p-8 rounded-lg shadow-lg relative transform hover:scale-[1.02] transition-transform duration-300 border border-slate-700">
+                        <svg class="absolute top-4 left-4 w-10 h-10 text-slate-700" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M10.368 15.018c-1.07.272-1.918.97-2.4 1.916-.482.945-.632 2.018-.534 3.044.1.38.218.74.352 1.074l.134.336c.668 1.676 1.918 3.044 3.518 3.892l.336.17c.334.17.686.304 1.056.402.98.272 2.018.272 3.044.034.38-.084.74-.2 1.074-.352l.336-.134c1.676-.668 3.044-1.918 3.892-3.518l.17-.336c.17-.334.304-.686.402-1.056.272-.98.272-2.018.034-3.044-.084-.38-.2-.74-.352-1.074l-.336-.134c-.945.482-1.74.945-2.4 1.428z" transform="scale(1.5) translate(-5 -4)" opacity="0.1"/>
+                        </svg>
+                        <p class="text-slate-400 italic mb-5 relative z-10">"Highly recommend Safe Lane! Very professional and made learning to drive a positive experience."</p>
+                        <p class="font-semibold text-sky-400 text-right">- Olivia W.</p>
+                    </div>
+                </div>
+                <p class="text-center text-slate-600 mt-12 text-lg">
+                    See more reviews from our happy learners on
+                    <span class="google-logo">
+                      <span class="google-g">G</span><span class="google-o1">o</span><span class="google-o2">o</span><span class="google-g">g</span><span class="google-l">l</span><span class="google-e">e</span>
+                    </span>!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-slate-400 py-10 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 space-x-4">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <span class="text-slate-600">|</span>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+                <span class="text-slate-600">|</span>
+                <a href="courses.html" class="hover:text-sky-400">Courses</a>
+                <span class="text-slate-600">|</span>
+                <a href="prices.html" class="hover:text-sky-400">Prices</a>
+                <span class="text-slate-600">|</span>
+                <a href="booking.html" class="hover:text-sky-400">Booking</a>
+                <span class="text-slate-600">|</span>
+                <a href="testimonials.html" class="hover:text-sky-400">Testimonials</a>
+                <span class="text-slate-600">|</span>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </div>
+            <p class="text-slate-300">&copy; <span id="current-year"></span> Safe Lane Driving School. All rights reserved.</p>
+            <p class="text-sm mt-2 text-slate-500">Driving Success in Sheffield.</p>
+        </div>
+    </footer>
+
+    <a href="booking.html" class="fixed bottom-6 right-6 z-50 bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-all text-lg md:text-base flex items-center gap-2 custom-shadow">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        Book Now
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Safe Lane Driving School</title>    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-sky-700 flex items-center gap-2">
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+                <span class="text-black">Safe Lane</span> <span class="text-red-600">Driving School</span>
+                <span class="learner-logo-fa navbar-logo-right"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+            </a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="courses.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="prices.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Prices</a>
+                <a href="booking.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Booking</a>
+                <a href="testimonials.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                <a href="contact.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium active">Contact</a>
+                <a href="tel:07555656560" class="ml-4 font-semibold text-sky-700 hover:text-orange-500 flex items-center gap-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>07555 656560</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="tel:07555656560" class="bg-orange-500 text-white font-semibold py-1.5 px-4 rounded-lg shadow hover:bg-orange-600 text-sm mr-4 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call</a>
+                <button id="menu-toggle" class="text-slate-800 focus:outline-none" type="button" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 absolute top-full left-0 w-full shadow-lg border-t border-slate-200">
+            <a href="index.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">About</a>
+            <a href="courses.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Courses</a>
+            <a href="prices.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Prices</a>
+            <a href="booking.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Booking</a>
+            <a href="testimonials.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Testimonials</a>
+            <a href="contact.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="py-20 md:py-28 bg-white section-animate text-slate-700">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-800">General Enquiries</h2>
+                <p class="text-center text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Have a quick question? Use the form below or contact us directly.</p>
+                <div class="flex flex-col md:flex-row gap-12 md:gap-16">
+                    <div class="md:w-1/2 lg:w-3/5">
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-6">Send us a Message</h3>
+                        <form id="contact-form" class="space-y-6" action="https://formsubmit.co/safelanedrivingschoolltd@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="thank-you.html">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact_name">Name <span class="text-red-500">*</span></label>
+                                    <input type="text" id="contact_name" name="contact_name" required class="w-full">
+                                </div>
+                                <div>
+                                    <label for="contact_email">Email <span class="text-red-500">*</span></label>
+                                    <input type="email" id="contact_email" name="contact_email" required class="w-full">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="contact_phone">Phone <span class="text-red-500">*</span> </label>
+                                <input type="tel" id="contact_phone" name="contact_phone" required class="w-full">
+                            </div>
+                            <div>
+                                <label for="contact_subject">Subject <span class="text-red-500">*</span></label>
+                                <input type="text" id="contact_subject" name="contact_subject" required class="w-full" placeholder="e.g., Question about prices, Area coverage...">
+                            </div>
+                            <div>
+                                <label for="contact_message">Message <span class="text-red-500">*</span></label>
+                                <textarea id="contact_message" name="contact_message" rows="5" required class="w-full"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full sm:w-auto bg-orange-500 text-white font-semibold py-3 px-10 rounded-lg shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 transition-all transform hover:scale-105">Send Message</button>
+                            </div>
+                            <div id="contact-form-status" class="mt-4 text-center font-medium" aria-live="polite"></div>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 lg:w-2/5 text-slate-600 space-y-8">
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-6">Contact Information</h3>
+                        <p class="text-lg">Ready to start learning or have questions? Contact us using the form or details below. We offer both <span class="font-semibold">Manual & Automatic</span> lessons and aim to respond within 24 business hours.</p>
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800 mb-1">Phone:</h4>
+                                    <a href="tel:07555656560" class="text-sky-600 hover:text-orange-500 hover:underline">07555656560</a> <span class="text-sm text-slate-500"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800 mb-1">Email:</h4>
+                                    <a href="mailto:safelanedrivingschoolltd@gmail.com" class="text-sky-600 hover:text-orange-500 hover:underline">safelanedrivingschoolltd@gmail.com</a> <span class="text-sm text-slate-500"></span>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800 mb-1">Address:</h4>
+                                    <p>32 Sands Close,<br>Sheffield, S14 1QQ<br>United Kingdom</p>
+                                    <p class="text-sm text-slate-500 mt-1">(Please note: This is a mock address for correspondence. Lessons are conducted in-car.)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800 mb-1">Business Hours:</h4>
+                                    <p>Mon - Sun: 8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-slate-400 py-10 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 space-x-4">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <span class="text-slate-600">|</span>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+                <span class="text-slate-600">|</span>
+                <a href="courses.html" class="hover:text-sky-400">Courses</a>
+                <span class="text-slate-600">|</span>
+                <a href="prices.html" class="hover:text-sky-400">Prices</a>
+                <span class="text-slate-600">|</span>
+                <a href="booking.html" class="hover:text-sky-400">Booking</a>
+                <span class="text-slate-600">|</span>
+                <a href="testimonials.html" class="hover:text-sky-400">Testimonials</a>
+                <span class="text-slate-600">|</span>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </div>
+            <p class="text-slate-300">&copy; <span id="current-year"></span> Safe Lane Driving School. All rights reserved.</p>
+            <p class="text-sm mt-2 text-slate-500">Driving Success in Sheffield.</p>
+        </div>
+    </footer>
+
+    <a href="booking.html" class="fixed bottom-6 right-6 z-50 bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-all text-lg md:text-base flex items-center gap-2 custom-shadow">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        Book Now
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

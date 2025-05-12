@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Safe Lane Driving School</title>    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-white">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-sky-700 flex items-center gap-2">
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+                <span class="text-black">Safe Lane</span> <span class="text-red-600">Driving School</span>
+                <span class="learner-logo-fa"><i class="fa-solid fa-square fa-rotate-15"></i><span class="learner-l">L</span></span>
+            </a>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium active">About</a>
+                <a href="courses.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                <a href="prices.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Prices</a>
+                <a href="booking.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Booking</a>
+                <a href="testimonials.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+                <a href="contact.html" class="nav-link text-slate-600 hover:text-sky-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="tel:07555656560" class="ml-4 font-semibold text-sky-700 hover:text-orange-500 flex items-center gap-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>07555 656560</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="tel:07555656560" class="bg-orange-500 text-white font-semibold py-1.5 px-4 rounded-lg shadow hover:bg-orange-600 text-sm mr-4 flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>Call</a>
+                <button id="menu-toggle" class="text-slate-800 focus:outline-none" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2 absolute top-full left-0 w-full shadow-lg border-t border-slate-200">
+            <a href="index.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Home</a>
+            <a href="about.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">About</a>
+            <a href="courses.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Courses</a>
+            <a href="prices.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Prices</a>
+            <a href="booking.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Booking</a>
+            <a href="testimonials.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Testimonials</a>
+            <a href="contact.html" class="block px-6 py-3 text-slate-600 hover:bg-sky-50 hover:text-sky-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="py-20 md:py-28 bg-white section-animate text-slate-700">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-800">About Safe Lane Driving School</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                    <div class="md:w-1/2">
+                        <img src="images/chris-liverani-HUJDz6CJEaM-unsplash.jpg" alt="Friendly driving instructor team at Safe Lane Driving School, Sheffield" class="rounded-lg shadow-lg mx-auto" onerror="this.src='https://placehold.co/600x450/e0e0e0/a0a0a0?text=Image+Not+Found'">
+                    </div>
+                    <div class="md:w-1/2 text-lg text-slate-600 space-y-5">
+                        <p>Welcome to <span class="font-semibold text-sky-600">Safe Lane Driving School</span>, Sheffield's trusted choice for learning to drive. We are dedicated to providing high-quality, patient and friendly driving tuition tailored to your individual needs.</p>
+                        <p>Our mission is simple: to help you become a <span class="font-semibold text-slate-800">safe, confident and responsible driver</span> for life, not just to pass your test. We pride ourselves on our high pass rates and the positive feedback we receive from our students.</p>
+                        <p>We use modern, dual-controlled vehicles and employ the latest teaching techniques to ensure you learn effectively in a relaxed and supportive environment. <span class="font-medium text-slate-700">We offer both Manual and Automatic lessons.</span></p>
+                        <ul class="space-y-3 pt-3">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 14.88a2 2 0 00-1.022.547m14.356 0a2 2 0 01-.022 2.02l-1.387 2.387a2 2 0 01-1.732 1.022H7.732a2 2 0 01-1.732-1.022L4.613 17.45a2 2 0 01-.022-2.02m14.356 0l1.387-2.387a2 2 0 00-1.732-3.022H5.732a2 2 0 00-1.732 3.022l1.387 2.387m12.973 0a6 6 0 00-3.86-.517l-.318.158a6 6 0 01-3.86.517l-.318-.158a6 6 0 00-3.86-.517m12.973 0L14 12.586M10 12.586l-1.428 2.842"></path></svg>
+                                <span class="text-slate-700">Manual & Automatic Dual-Controlled Cars</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="text-slate-700">Fully Qualified & DVSA Approved Instructors</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="text-slate-700">Patient, Friendly & Encouraging Approach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                <span class="text-slate-700">Flexible Lesson Times (Evenings & Weekends available)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-sky-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="text-slate-700">Excellent First-Time Pass Rates</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-slate-400 py-10 border-t border-slate-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 space-x-4">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <span class="text-slate-600">|</span>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+                <span class="text-slate-600">|</span>
+                <a href="courses.html" class="hover:text-sky-400">Courses</a>
+                <span class="text-slate-600">|</span>
+                <a href="prices.html" class="hover:text-sky-400">Prices</a>
+                <span class="text-slate-600">|</span>
+                <a href="booking.html" class="hover:text-sky-400">Booking</a>
+                <span class="text-slate-600">|</span>
+                <a href="testimonials.html" class="hover:text-sky-400">Testimonials</a>
+                <span class="text-slate-600">|</span>
+                <a href="contact.html" class="hover:text-sky-400">Contact</a>
+            </div>
+            <p class="text-slate-300">&copy; <span id="current-year"></span> Safe Lane Driving School. All rights reserved.</p>
+            <p class="text-sm mt-2 text-slate-500">Driving Success in Sheffield.</p>
+        </div>
+    </footer>
+
+    <a href="booking.html" class="fixed bottom-6 right-6 z-50 bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition-all text-lg md:text-base flex items-center gap-2 custom-shadow">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        Book Now
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
